@@ -4,11 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Converter App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <title>Currency Converter</title>
 </head>
 
 <body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form id="converterForm" class="converter-form">
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+            </div>
+            <div class="form-group">
+                <label for="from-currency">From</label>
+                <select id="from-currency">
+                    <!-- options from api -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="to-currency">To</label>
+                <select id="to-currency">
+                    <!-- options from api -->
+                </select>
+            </div>
+            <button type="submit">Convert</button>
+        </form>
+        <div id="result">
 
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
