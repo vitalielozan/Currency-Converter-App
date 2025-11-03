@@ -15,8 +15,7 @@
 # Installation
 
 - Clone the repository:
-- Shellgit clone https://github.com/your-username/Currency-Converter-App.git
-- cd Currency-Converter-AppShow more lines
+- cd Currency-Converter-App
 
 # Usage
 
