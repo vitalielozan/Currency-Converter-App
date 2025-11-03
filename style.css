@@ -1,86 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --bg-primary: hsl(262, 47%, 11%);
-    --bg-secondary: hsl(257, 33%, 17%);
-    --bg-input: hsl(256, 25%, 27%);
-    --text-primary: hsl(214, 32%, 91%);
-    --text-secondary: hsl(215, 20%, 65%);
-    --border-color: hsl(215, 19%, 35%);
-    --accent-primary: hsl(173, 58%, 38%);
-    --accent-hover: hsl(178, 56%, 27%);
+  --bg-primary: hsl(262, 47%, 11%);
+  --bg-secondary: hsl(257, 33%, 17%);
+  --bg-input: hsl(256, 25%, 27%);
+  --text-primary: hsl(214, 32%, 91%);
+  --text-secondary: hsl(215, 20%, 65%);
+  --border-color: hsl(215, 19%, 35%);
+  --accent-primary: hsl(173, 58%, 38%);
+  --accent-hover: hsl(178, 56%, 27%);
 }
 
 body {
-    background-color: var(--bg-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
-    width: 100%;
-    max-width: 550px;
-    background-color: var(--bg-secondary);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 550px;
+  background-color: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    text-align: center;
-    color: var(--text-primary);
-    margin-bottom: 25px;
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 25px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    color: var(--text-secondary);
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
 }
 
 input,
 select {
-    width: 100%;
-    padding: 15px;
-    background-color: var(--bg-input);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    font-size: 1.2rem;
-    color: var(--text-primary);
+  width: 100%;
+  padding: 15px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-primary);
 }
 
 input:focus,
 select:focus {
-    outline: none;
-    border-color: var(--accent-primary);
-    box-shadow: 0 0 0 4px rgba(61, 135, 248, 0.2);
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 4px rgba(61, 135, 248, 0.2);
 }
 
 button {
-    width: 100%;
-    padding: 15px;
-    background-color: var(--accent-primary);
-    color: hsl(0, 0%, 100%);
-    border: none;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--accent-primary);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: var(--accent-hover);
-    transform: translateY(-2px);
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.result {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-primary);
 }
