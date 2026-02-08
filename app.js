@@ -3,12 +3,14 @@ const fromCurrency = document.querySelector('#fromCurrency');
 const toCurrency = document.querySelector('#toCurrency');
 const amountInput = document.querySelector('#amount');
 const resultContainer = document.querySelector('#result');
+const swapButton = document.querySelector('#swapButton');
 
 const BASE_URL = `https://open.er-api.com/v6/latest`;
 
 window.addEventListener('load', fetchCurrencies);
 
 converterForm.addEventListener('submit', convertCurrency);
+swapButton.addEventListener('click', swapCurrencies);
 
 async function fetchCurrencies() {
   try {
@@ -59,5 +61,15 @@ async function convertCurrency(event) {
     `;
   } catch (error) {
     console.log(error);
+  }
+}
+
+function swapCurrencies() {
+  const temp = fromCurrency.value;
+  fromCurrency.value = toCurrency.value;
+  toCurrency.value = temp;
+
+  if (amountInput.value) {
+    converterForm.requestSubmit();
   }
 }
